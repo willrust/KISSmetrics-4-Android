@@ -212,6 +212,10 @@ public class KISSmetricsAPI implements KISSmetricsURLConnectionCallbackInterface
 		this.send();
 	}
 	
+	public String identity() {
+		return _identity;
+	}
+	
 	public void clearIdentity() {
 		String identity = UUID.randomUUID().toString();
 
